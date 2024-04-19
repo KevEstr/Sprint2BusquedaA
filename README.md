@@ -5,13 +5,13 @@ Por razones practicas se eliminó la carpeta node_modules porque ocupa mucho esp
 Por ello, se debe seguir estos pasos:
 
 1. Instalar todos los modulos y dependencias necesarias:
-## npm install
+**npm install**
 
 2. Correr el código:
-## npm run dev 
+**npm run dev**
 
 3. Pruebas unitarias:
-## npm test
+**npm test**
 
 # Descripción del Código:
 
