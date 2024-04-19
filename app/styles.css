@@ -1,0 +1,605 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  
+}
+
+.container {
+  max-width: auto;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+  display: flex;
+  flex-direction: horizontal;
+}
+
+.input-group {
+  margin: 10px;
+  margin-bottom: 15px;
+  align-self:  center;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  align-self:  center;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  background-color: gray;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos específicos para el botón "Buscar" */
+button[type="submit"] {
+  padding: 0.5em 1em; /* Puedes ajustar estos valores según tu preferencia */
+  font-size: inherit; /* Hace que el tamaño del texto sea igual al tamaño del texto de su contenedor */
+  border: 1px solid #ccc; /* Añade un borde para mayor claridad */
+  
+}
+
+/* Estilos para la versión móvil */
+@media (max-width: 480px) {
+  .container {
+      padding: 10px;
+  }
+}
+
+.top-panel {
+  background-color: #f0f0f0;
+  padding: 10px; /* Reducir el padding para reducir la altura del panel */
+  text-align: left;
+  display: flex;
+  justify-content: space-between; /* Alinear elementos a los extremos */
+  align-items: center; /* Centrar verticalmente los elementos */
+}
+
+.top-panel {
+  background-color: transparent; /* Cambiar el color de fondo a transparente */
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.header-button {
+  margin-left: 15px;
+  background-color: transparent; /* Cambiar el color de fondo a transparente */
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Cambiar el color de fondo con transparencia al pasar el mouse */
+}
+
+
+
+.logo-title {
+  margin-left: 10px;
+  font-size: 24px; /* Reducir el tamaño de la fuente del título */
+  color: #00BFFF;
+}
+
+
+/* Estilos para el formulario en una sola línea */
+@media (min-width: 1200px) {
+  form {
+      display: flex;
+      align-items: horizontal;
+      margin-left: 50px;
+      margin-right: 50px;
+      
+  }
+
+  .input-group:last-child {
+      margin-right: 0;
+  }
+
+  label {
+      flex: 0 0 100px; /* Ancho fijo para las etiquetas */
+      margin-right: 10px;
+      text-align: left;
+      align-self:  center;
+  }
+
+  button[type="submit"] {
+      
+      width: auto;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+      align-self:center;
+  }
+
+  .input-group select {
+      width: 100%; /* Establece un ancho del 100% para ocupar todo el espacio disponible */
+      padding: 10px; /* Añade un relleno igual al de los otros campos de entrada */
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+  }
+  
+  .flight-option {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 20px auto;
+      max-width: 1200px; /* Increased width for more space */
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative; /* Added to make the position absolute work */
+  }
+  .best-price {
+      background-color: #4caf50;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+      border-radius: 5px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 12px; /* Adjust the font size */
+      transform: translate(10%, -50%); /* Position slightly away from the corner */
+  }
+  .departure-time {
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .direct-flight {
+      color: #888;
+  }
+  .airport-codes {
+      font-size: 14px;
+      color: #888;
+  }
+  .arrival-time {
+      font-size: 18px;
+      font-weight: bold;
+  }
+  .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #4caf50;
+  }
+  .flight-details-link {
+      font-size: 14px;
+      color: #4caf50;
+      text-decoration: none;
+  }
+
+
+  /*ESTE ES EL CODIGO DE JUAN ANDRES RIVERA ARANGO 1037666069 */
+  
+  .flight-separator {
+      border-top: 1px solid #868686; /* Color de la línea separadora */
+      width: 30%;
+      margin: 0 20px;
+  }
+  
+  .flight-separator.left {
+      border-left: 1px solid #868686; /* Agrega una línea separadora a la izquierda */
+  }
+
+  .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #000000;
+      position: relative; /* Establece la posición relativa */
+      padding-left: 2em; /* Añade un espacio a la izquierda para la línea separadora */
+  }
+  
+  .left-border {
+      position: absolute; /* Establece la posición absoluta */
+      left: 1em; /* Alinea la línea a la izquierda */
+      top: 0; /* Alinea la línea en la parte superior */
+      height: 2em; /* Establece la altura al 100% */
+      width: 1px; /* Ajusta el ancho de la línea según sea necesario */
+      background-color: #868686; /* Color de la línea separadora */
+  }
+
+    .input-group {
+      margin-bottom: 25px;
+      display: flex; /* Cambia a un diseño de caja flexible */
+      align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  .input-icon-container {
+      position: relative;
+      margin-right: 20px; /* Agrega espacio entre el icono y el input */
+  }
+
+  .header-container {
+      background-color: #fff;
+      padding: 2px 10px; /* Reducir el padding verticalmente */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px; /* Agregar margen inferior */
+  }
+
+  .icono {
+      position: absolute;
+      
+      top: 50%; /* Alinea el ícono verticalmente */
+      transform: translateY(-50%); /* Alinea el ícono verticalmente */
+      color: #0a0a0a; /* Cambia el color del ícono según sea necesario */
+  }
+
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"] {
+      width: 100%; /* Ajusta el ancho para que ocupe todo el espacio disponible */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+}
+  /* Estilos para el espacio entre los selectores */
+  .flight-separator {
+      border-top: 1px solid #868686;
+      width: 350px; /* Ajusta el ancho del separador */
+      margin: 0 10px; /* Ajusta los márgenes para dar espacio */
+  }
+
+  .input-container {
+      flex: 1; /* Los elementos del formulario ocupan el mismo espacio */
+      margin-bottom: 20px; /* Margen inferior entre los elementos */
+      margin-right: 2em;
+      position: relative;
+  }
+
+  .dates-container {
+      flex: 1; /* Los elementos del formulario ocupan el mismo espacio */
+      margin-bottom: 20px; /* Margen inferior entre los elementos */
+      margin-right: 3em;
+  }
+  
+  .passengers-container {
+      width: 7em;
+      align-items: center; /* Centra verticalmente los elementos */
+  }
+
+  .passengers-container .input-icon-container {
+      display: flex;
+      align-items: center; /* Centra verticalmente los elementos */
+  }
+
+  .passengers-container .input-icon-container .icono {
+      margin-left: 10px; /* Agrega un margen a la izquierda del ícono para separarlo del input */
+  }
+
+  .input-container label {
+      display: block; /* Coloca cada etiqueta en una línea nueva */
+  }
+
+  .input-container input,
+  .input-container select {
+  flex: 3;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+  .input-icon-container {
+      margin-right: 30px; /* Ajusta el espacio entre el icono y el input */
+  }
+
+  .input-icon-container .material-symbols-outlined {
+      position: absolute; /* Establece la posición absoluta del icono */
+      left: 10px; /* Ajusta la posición del icono */
+      top: 50%; /* Alinea el icono verticalmente */
+      transform: translateY(-50%); /* Ajusta el icono verticalmente */
+      color: #0a0a0a; /* Cambia el color del icono según sea necesario */
+  }
+  
+  .input-icon-container input {
+      width: 100%; /* Asegura que el input ocupe todo el ancho disponible */
+  }
+
+  .promo {
+  max-width: auto;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  display: flex; /* Utiliza flexbox */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+  
+  .promo-image {
+      max-width: 70%; /* Cambia el ancho máximo de la imagen al 100% del contenedor */
+      height: auto; /* Permite que la altura se ajuste automáticamente para mantener la proporción */
+      border-radius: 8px; /* Puedes mantener el radio de borde si lo deseas */
+  }
+  
+  
+  .overlay {
+      position: absolute;
+      top: 50%;
+      left: 10%; /* Ajusta la posición horizontal del texto */
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5); /* Agrega un fondo oscuro semi-transparente al texto */
+      color: white;
+      padding: 20px;
+      border-radius: 5px;
+  }
+  
+  .ver-precios-container {
+      position: absolute; /* Establece la posición absoluta */
+      top: calc(100% + 20px); /* Coloca el contenedor debajo del contenedor blanco */
+      left: 0;
+      width: 100%;
+      background-color: #ffffff; /* Puedes ajustar el color de fondo según sea necesario */
+      padding: 20px; /* Puedes ajustar el relleno según sea necesario */
+      border-radius: 8px; /* Puedes ajustar el radio de borde según sea necesario */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega una sombra para mayor profundidad */
+      z-index: 999; /* Asegura que esté por encima del contenedor blanco */
+  }
+
+  .flight-header-container {
+      background-color: #fff; /* Color de fondo blanco */
+      padding: 20px; /* Añade relleno al contenedor */
+      margin-left: auto; /* Establece el margen izquierdo automático */
+      margin-right: auto; /* Establece el margen derecho automático */
+      width: 80%; /* Establece un ancho del 80% del contenedor padre */
+      max-width: 800px; /* Establece un ancho máximo para el contenedor */
+      border-radius: 10px; /* Agrega bordes redondeados */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+      text-align: center; /* Centra el contenido */
+      margin-bottom: 45px;
+  }
+  
+  
+  .flight-header {
+      background-color: #f0f0f0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  }
+  
+  .flight-header-text {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+  
+  .flight-header-filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .filter-button {
+      margin: 0 10px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+  }
+  
+  .filter-button:hover {
+      background-color: #0056b3;
+  }
+
+  .flight-header-container {
+      background-color: #fff; /* Establece el color de fondo blanco */
+      padding: 20px; /* Añade relleno al contenedor */
+      margin-left: auto; /* Establece el margen izquierdo automático */
+      margin-right: auto; /* Establece el margen derecho automático */
+      width: 80%; /* Establece un ancho del 80% del contenedor padre */
+      max-width: 800px; /* Establece un ancho máximo para el contenedor */
+      border-radius: 10px; /* Agrega bordes redondeados */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+      text-align: center; /* Centra el contenido */
+  }
+  
+  .flight-header {
+      background-color: transparent; /* Cambia el color de fondo a transparente */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: none; /* Elimina cualquier sombra */
+      text-align: center;
+  }
+  
+  .flight-header-text {
+      font-size: 24px; /* Aumenta el tamaño del texto */
+      font-weight: bold;
+      margin-bottom: 10px;
+  }
+
+  
+  .flight-header-filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+  }
+  
+  .filter-button {
+      margin: 0 10px;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: grey;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+  }
+  
+  .filter-button:hover {
+      background-color: grey;
+  }
+  
+  .special-logo-container {
+      display: flex; /* Cambia el tipo de display a flex */
+      align-items: center; /* Alinea verticalmente los elementos */
+      margin-left: 90px;
+  }
+  
+  .special-logo-container .icono {
+      margin-right: 10px; /* Agrega un margen a la derecha del icono */
+  }
+
+  .form-container {
+      margin-top: 1em;
+      display: flex;
+      flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+      justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+  }
+
+}
+  
+  .special-logo-container .icono {
+      margin-right: 10px; /* Agrega un margen a la derecha del icono */
+  }
+
+  .header-button .material-symbols-outlined.header-button-icon-numbers {
+      margin-right: 5px; /* Ajusta el espacio entre el icono y el texto si es necesario */
+      vertical-align: bottom; /* Coloca el icono más abajo para alinearlo con el texto */
+      font-size: 20px; /* Tamaño específico para los iconos en los botones de encabezado */
+      /* Otros estilos específicos si los necesitas */
+  }
+
+  .header-button.selected {
+      /* Estilos para el botón seleccionado */
+      color: black; /* Cambia el color del texto del botón seleccionado a negro */
+  }
+  
+  .header-button:not(.selected) {
+      /* Estilos para los botones que no están seleccionados */
+      color: gray; /* Cambia el color del texto de los botones no seleccionados a gris */
+  }
+
+  .arrow-icon {
+      margin: 0 30px; /* Espacio entre los números y la flecha */
+  }
+
+  .input-icon-container {
+      position: relative;
+      display: inline-block;
+      margin-right: 30px; /* Ajusta el valor según sea necesario para dar suficiente espacio al icono */
+  }
+
+  .input-container input[type="text"],
+  .input-container input[type="date"] {
+      padding-left: 40px; /* Ajusta el valor según sea necesario para el espaciado deseado */
+}
+
+.material-symbols-outlined {
+  font-size: 100px; /* Ajusta el tamaño según sea necesario */
+}
+
+.modify-search-button {
+    padding: 12px 24px; /* Ajusta el espaciado entre el texto y los bordes */
+    height: 40px; /* Ajusta la altura del botón */
+    margin-top: 27px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    line-height: 10px; /* Ajusta la altura de línea para centrar verticalmente el texto */
+}
+
+
+.active-filters-header {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; /* Agrega margen inferior para separar del encabezado de abajo */
+    margin-top: 0px;
+    margin-left: auto; /* Establece el margen izquierdo automático */
+    margin-right: auto; /* Establece el margen derecho automático */
+    width: 80%; /* Establece un ancho del 80% del contenedor padre */
+    max-width: 800px; /* Establece un ancho máximo para el contenedor */
+
+}
+
+
+.active-filter {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active-filter:hover {
+    background-color: #0056b3;
+}
+
+
+  
