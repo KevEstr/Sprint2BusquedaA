@@ -10,7 +10,7 @@ Por ello, se debe seguir estos pasos:
 2. Correr el código:
 ## npm run dev 
 
-### Descripción del Código:
+# Descripción del Código:
 
 ## SeeFlights.tsx
 Es un componente que muestra la interfaz de usuario para buscar y mostrar vuelos. Permite a los usuarios seleccionar ciudades de origen y destino, fechas de viaje y número de pasajeros. Además, proporciona funcionalidad para filtrar y ordenar los vuelos disponibles.
