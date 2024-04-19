@@ -10,6 +10,9 @@ Por ello, se debe seguir estos pasos:
 2. Correr el código:
 ## npm run dev 
 
+3. Pruebas unitarias:
+## npm test
+
 # Descripción del Código:
 
 ## SeeFlights.tsx
